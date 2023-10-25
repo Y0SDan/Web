@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "es">
+  <head>
+    <title>Mi primer formulario</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <form action = "otroHTML.html" method = "post">
+      <p><label for = "nombre"> Nombre: <input type = "text" id = "nombre"></label> </p>
+      <p><label for = "apellido"> Apellido: <input type = "text" id = "apellido"></label> </p>
+      <p><label for = "edad"> Edad: <input type = "text" id = "edad"></label> </p>
+      <p><label for = "Observacion"> Observación: <textarea id = "observacion"></textarea></label></p>
+
+      <label> Estratura:
+        <select id = "estatura">
+            <option value = "< 1,50"> < 1,50 mts </option>
+            <option value = "1,51 a 1,60"> 1,51 a 1,60 mts </option>
+            <option value = "1,61 a 1,70" selected> 1,61 a 1.70 mts </option> <!--Predefinir una opcion-->
+          <option value = "1,71 a 1,80"> 1,71 a 1 80 mts </option>
+            <option value = "> 1,80" disabled> > 1,80 mts </option> <!--Desactivar una opcion-->
+        </select>
+      </label>
+
+      <p><b>Color de ojos:</b></p> <!-- <b></b> sirve para resaltar el texto en negritas -->
+      
+      <input type = "checkbox" value = "marron" checked> <!-- preseleccionar-->
+      <label>Marrón</label> <br> 
+      <input type = "checkbox" value = "verde">
+      <label>Verde</label> <br>
+      <input type = "checkbox" value = "celeste">
+      <label>celeste</label> <br>
+      <input type = "checkbox" vale = "otro">
+      <label>otro</label> <br>
+      
+      <input type = "radio" value = "marron" checked> <!-- preseleccionar-->
+      <label>Marrón</label> <br>
+      <input type = "radio" value = "verde">
+      <label>Verde</label> <br>
+      <input type = "radio" value = "celeste">
+      <label>celeste</label> <br>
+      <input type = "radio" vale = "otro">
+      <label>otro</label> <br>
+      
+      <br> <!-- br -> break -> para agregar un salto de linea -->
+      <button type = "submit"> Enviar </button>
+    </form>
+  </body>
+</html>
